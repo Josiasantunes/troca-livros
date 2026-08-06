@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --azul-principal: #167CBF;
     --azul-escuro: #003A66;
     --laranja-principal: #F7941D;
@@ -9,16 +9,16 @@
     --branco-fonte: #FFFFFF
 }
 
-*{
+* {
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    
+
 }
 
-header{
+header {
     background-color: var(--azul-principal);
     display: flex;
     justify-content: space-between;
@@ -26,26 +26,27 @@ header{
     color: var(--branco-fonte);
     max-width: 100vw;
     height: 10vh;
-    padding: 0 100px ;
+    padding: 0 100px;
 }
 
-#nome-logo{
+#nome-logo {
     font-weight: 400;
     font-size: 25px;
 }
-span{
+
+span {
     font-weight: 700;
     font-size: 25px;
     color: var(--laranja-principal);
 }
 
-ul{
+ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-.menu{
+.menu {
     display: inline-block;
     text-decoration: none;
     color: var(--branco-fonte);
@@ -55,35 +56,35 @@ ul{
     font-weight: 600;
 }
 
-.menu:hover{
-    color:  var(--laranja-principal);
-    transform: scale(1.2); 
-    transition: 0.2s;   
-    
+.menu:hover {
+    color: var(--laranja-principal);
+    transform: scale(1.2);
+    transition: 0.2s;
+
 }
 
 
-.banner-principal{
+.banner-principal {
     text-align: center;
-    padding: 40px 200px; 
-    background-image: linear-gradient( var(--azul-principal), var(--azul-escuro));
+    padding: 40px 200px;
+    background-image: linear-gradient(var(--azul-principal), var(--azul-escuro));
     color: var(--branco-fonte);
-    height: 35vh;
+    height: 25vh;
 }
 
-h1{
-    padding-top: 50px;
+h1 {
+
     padding-bottom: 30px;
     font-size: 40px;
 }
 
-p{
+p {
     margin-bottom: 70px;
     font-size: 25px;
 }
 
-#btn-ver-livros{
-    background-color:var(--laranja-escuro);
+#btn-ver-livros {
+    background-color: var(--laranja-escuro);
     text-decoration: none;
     color: var(--branco-fonte);
     padding: 20px 50px;
@@ -91,35 +92,73 @@ p{
     font-weight: 600;
 }
 
-#btn-ver-livros:hover{
+#btn-ver-livros:hover {
     background-color: var(--laranja-escurao);
     border: none;
 
 }
 
-.foto-livro{
+.foto-livro {
+    max-width: 100%;
+}
+
+.grade-livros {
+    max-width: 80vw;
+    margin: 0px auto;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-.grade-livros{
-    max-width:80vw;
-    margin:0px auto;
-} 
 
 
-.area-titulo{
+.area-titulo {
     text-align: center;
     font-size: 35px;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 
-.card-livro{
-    width: 300px;
+.card-livro {
+    max-width: 350px;
     text-align: center;
     border-radius: 6px;
-    background-color: var(--azul-principal); 
-    padding: 30px;
-    box-shadow: 0px 0px 10px 0px var(--azul-principal);
+    background-color: var(--azul-principal);
+    box-shadow: 0px 0px 30px var(--azul-principal);
     overflow: hidden;
+}
+
+.btn-livro {
+    background-color: var(--azul-escuro);
+    padding: 10px 20px;
+    color: var(--branco-fonte);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn-livro:hover {
+    background-color: var(--laranja-principal);
+}
+
+.categoria-livro {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco-fonte);
+    background-color: var(--azul-escuro);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.titulo-livro {
+    font-size: 25px;
+    color: #003A66
+}
+
+.autores-livro {
+    font-size: 16px;
+    color: var(--azul-escuro);
 }
