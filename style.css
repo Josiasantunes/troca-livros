@@ -6,7 +6,7 @@
     --laranja-principal: #F7941D;
     --laranja-escuro: #b97829;
     --laranja-escurao: #945014;
-    --branco-fonte: #FFFFFF
+    --branco-fonte: #FFFFFF;
 }
 
 * {
@@ -167,7 +167,9 @@ p {
 /* secao como funciona */
 
 .ajuda{
-    background-color (--azul-principal);
+    margin-top: 50px;
+
+    background-color: var(--azul-principal);
     padding:60px 20px;
 }
 
@@ -175,23 +177,68 @@ p {
     color: var(--azul-escuro);
     text-align: center;
     margin-bottom: 40px;
-    fonte-size: 35px;
+    font-size: 35px;
 }
 
 .todos-passos{
+    margin: 0 auto;
     display: flex;
 justify-content: center;    
+background-color: var(--azul-principal);
+width: 85vw;
 }
 
 .footer-container{
-    margin:0 auto;
-    width: 90vw;
-    color:#003A66
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 85vw;
     display: flex;
+    justify-content: space-between;
 }
 
+footer{
+    background-image:linear-gradient(var(--azul-principal), var(--azul-escuro));
+    padding: 20px 0px;
+    color: var(--branco-fonte);
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 500;
+}
 
 .footer-coluna{
     display: flex;
     flex-direction: column;
+    max-width: 28vw;
+}
+.footer-coluna p{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+    color: var(--branco-fonte);
+}
+.footer-coluna ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+
+.footer-social{
+    padding: 15px;
+}
+.footer-linha{
+    max-width: 70vw;
+    margin: 20px auto;
+    border: 1px solid var(--branco-fonte);
+}
+.footer-copy{
+    margin-top: 20px;
+    text-align: center;
 }
