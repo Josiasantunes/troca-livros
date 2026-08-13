@@ -1,12 +1,17 @@
-@import url('style.css');
+@import url(style.css);
 
-
+body{
+    background-image: linear-gradient(rgba(255, 141, 40, 20%),rgba(0, 75, 141, 20%));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main{
     width: 1142px;
     height: 673px;
     border: 2px solid var(--azul-principal);
-    margin: 90px auto; 
-    background-image: linear-gradient(var(--azul-principal), var(--azul-secundario));
     display: flex;
 }
 .sessao-imagem{
@@ -32,4 +37,6 @@ main{
 
 .area-titulo h2 {
     font-size: 24px;
+    color: var(--azul-principal);
+    fonte-weight: 400;
 }
