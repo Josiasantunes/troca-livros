@@ -1,0 +1,35 @@
+@import url('style.css');
+
+
+main{
+    width: 1142px;
+    height: 673px;
+    border: 2px solid var(--azul-principal);
+    margin: 90px auto; 
+    background-image: linear-gradient(var(--azul-principal), var(--azul-secundario));
+    display: flex;
+}
+.sessao-imagem{
+    width: 522px;
+    height: 673px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sessao-login{
+    height: 673px;
+    width: 620px;
+}
+
+.area-titulo{
+    text-align: center;
+}
+
+.area-titulo h1, span {
+    font-size: 36px;
+}
+
+.area-titulo h2 {
+    font-size: 24px;
+}
