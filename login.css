@@ -10,21 +10,32 @@ body{
 }
 main{
     width: 1142px;
-    height: 673px;
-    border: 2px solid var(--azul-principal);
+    height: 661px;
     display: flex;
+    box-shadow: 0 0 20px #2376ad;
+    border-radius: 50px;
 }
+
+
 .sessao-imagem{
-    width: 522px;
-    height: 673px;
+    width: 510px;
+    height: 661px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+.sessao-imagem img{
+    border-radius: 50px;
+}
+
 .sessao-login{
     height: 673px;
     width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .area-titulo{
@@ -40,3 +51,69 @@ main{
     color: var(--azul-principal);
     fonte-weight: 400;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+    gap: 3px;
+}
+
+form input{
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+#email{
+    margin-bottom: 15px;
+}
+
+button{ 
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 18px;
+    background-image: linear-gradient( to right, rgba(0, 75, 141, 80%), rgba(255, 141, 40, 60%) );
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form label{
+    color: var(--azul-principal);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links-senha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-senha label {
+    position: relative;
+    right: 75px;
+}
+
+.links-senha label, input, a{
+    color: #2376ad;
+    font-weight: 300;
+}
+
+
+section a :hover{
+    color:#2376ad;
+    font-weight: 600;
+}
+
+section a ::visited{
+    color: #2376ad
+}
+
+
+#link-nao-conta{
+    text-align: center;
+}
+
