@@ -116,4 +116,7 @@ section a ::visited{
 #link-nao-conta{
     text-align: center;
 }
-
+.area-senha{
+    display:flex;
+    gap: 20px;
+}
