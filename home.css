@@ -13,10 +13,11 @@ main{
     margin: 20px auto;
     width: 75vw;
     text-align: center;
+    margin-bottom: 200px;
 }
 
 h2{
-    background-color: rgb(157, 138, 210);
+    background-color: rgb(148, 122, 222);
     border-radius: 10px;
     font-size: 18px;
     font-weight: 400;
@@ -40,4 +41,35 @@ input{
     margin-right: 10px;
 }
 
+.area_add_sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 22px;
+}
 
+.area_add_sub button{
+    padding: 5px 10px;
+    background-color: #8d9fe0;
+    border: 1px solid #898fcc;
+    color: #000;
+    border-radius: 5px;
+}
+
+.area_add_sub button:hover{
+    background-color: #d1d68b;
+}
+
+ul{
+    width: 400px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+    background-color: #9182cd;
+    padding: 0 100px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

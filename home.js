@@ -15,9 +15,9 @@ btnTroca.addEventListener('mouseout', () => {
 
 
 
-const btnVerde = document.getElementById("btn-verde");
-const btnAmarelo = document.getElementById("btn-amarelo");
-const btnAzul = document.getElementById("btn-azul");
+const btnVerde = document.getElementById("btn_verde");
+const btnAmarelo = document.getElementById("btn_amarelo");
+const btnAzul = document.getElementById("btn_azul");
 const caixa = document.getElementById("caixa");
 
 btnVerde.addEventListener('click', () => {
@@ -30,4 +30,47 @@ btnAmarelo.addEventListener('click', () => {
 
 btnAzul.addEventListener('click', () => {
     caixa.style.backgroundColor = "blue";
+});
+
+// Simulando adição e subtraçao de valor
+const valorReal = document.getElementById("valor_real");
+let contador = 0;
+
+document.getElementById("btn_menos").addEventListener( 'click', () => {
+    if( contador > 0){
+        contador--;
+        valorReal.textContent = contador;
+    }
+});
+
+document.getElementById("btn_mais").addEventListener( 'click', () => {
+    contador++;
+    valorReal.textContent = contador;
+});
+
+// Adicionando Livros
+
+const nomeLivro = document.getElementById("nome_livro");
+const listaLivros = document.getElementById("lista_livros")
+
+document.getElementById("adiciona_livro").addEventListener('click', ()=>{
+    
+    const novoLivro = document.createElement("li");
+    novoLivro.textContent = nomeLivro.value;
+    const novoButton = document.createElement("li");
+        novoLivro.textContent = "X";
+        novoButton.style.position = "relative"
+        novoButton.style.marginLeft = "20px";
+
+        
+
+    listaLivros.appendChild(novoLivro);
+
+    novo
+    nomeLivro.value = "";
+
+});
+
+document.getElementById("remover_livro").addEventListener('click', ()=>{
+    listaLivros.innerHTML="";
 });
